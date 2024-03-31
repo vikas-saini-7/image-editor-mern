@@ -22,6 +22,7 @@ const EditorLayout = (props) => {
                 <EditorToolExpanded
                     toolOpen={toolOpen}
                     selectedTool={selectedTool}
+                    setToolOpen={setToolOpen}
                 />
                 <div className='w-full'>{props.children}</div>
             </div>

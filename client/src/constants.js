@@ -52,8 +52,8 @@ export const tools = [
     },
     {
         id: 7,
-        name: 'AI generated',
+        name: 'AI Stock',
         icon: 'image',
-        slug: 'ai-generated'
+        slug: 'ai-stock'
     },
 ]
