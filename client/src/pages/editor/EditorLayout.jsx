@@ -10,7 +10,7 @@ const EditorLayout = (props) => {
         setEditorToolExpanded(!editorToolExpanded)
     }
   return (
-    <div>
+    <div className='overflow-hidden'>
         <EditorHeader/>
         <div className='flex'>
             <EditorTools

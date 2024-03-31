@@ -3,7 +3,7 @@ import FeatherIcon from 'feather-icons-react'
 
 const EditorTools = ({tools, toggleToolExpand}) => {
   return (
-    <div className='border-r'>
+    <div className='border-r h-calc'>
       <ul className='flex flex-col items-center pt-4'>
         {tools.map((tool) => (
           <li onClick={toggleToolExpand} key={tool.id} className='hover:bg-gray-200 flex flex-col items-center w-[120px] py-[18px] cursor-pointer select-none'>
