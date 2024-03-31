@@ -5,26 +5,28 @@ import EditorToolExpanded from '../../components/EditorToolExpanded'
 import { tools } from '../../constants'
 
 const EditorLayout = (props) => {
-    const [editorToolExpanded, setEditorToolExpanded] = useState(false);
-    const toggleToolExpand = () => {
-        setEditorToolExpanded(!editorToolExpanded)
+    const [toolOpen, setToolOpen] = useState(false);
+    const [selectedTool, setSelectedTool] = useState(false);
+    function handleToolOpen() {
+        setToolOpen(true);
     }
-  return (
-    <div className='overflow-hidden'>
-        <EditorHeader/>
-        <div className='flex'>
-            <EditorTools
-                tools={tools}
-                toggleToolExpand={toggleToolExpand}
-            />
-            <EditorToolExpanded
-                editorToolExpanded={editorToolExpanded}
-                setEditorToolExpanded={setEditorToolExpanded}
-            />
-            <div className='w-full'>{props.children}</div>
+    return (
+        <div className='overflow-hidden'>
+            <EditorHeader/>
+            <div className='flex'>
+                <EditorTools
+                    tools={tools}
+                    handleToolOpen={handleToolOpen}
+                    setSelectedTool={setSelectedTool}
+                />
+                <EditorToolExpanded
+                    toolOpen={toolOpen}
+                    selectedTool={selectedTool}
+                />
+                <div className='w-full'>{props.children}</div>
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default EditorLayout

@@ -1,15 +1,20 @@
 import React from 'react'
 import FeatherIcon from 'feather-icons-react'
+import EditorToolItem from './EditorToolItem'
 
-const EditorTools = ({tools, toggleToolExpand}) => {
+const EditorTools = ({tools, handleToolOpen, setSelectedTool}) => {
   return (
     <div className='border-r h-calc'>
       <ul className='flex flex-col items-center pt-4'>
         {tools.map((tool) => (
-          <li onClick={toggleToolExpand} key={tool.id} className='hover:bg-gray-200 flex flex-col items-center w-[120px] py-[18px] cursor-pointer select-none'>
-            <FeatherIcon icon={tool.icon} size="24" />
-            <p className='uppercase text-xs text-gray-500 mt-2'>{tool.name}</p>
-          </li>
+        <EditorToolItem
+          key={tool.key}
+          icon={tool.icon}
+          name={tool.name}
+          slug={tool.slug}
+          handleToolOpen={handleToolOpen}
+          setSelectedTool={setSelectedTool}
+        />
         ))}
       </ul>
     </div>

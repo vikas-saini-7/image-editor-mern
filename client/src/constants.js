@@ -1,52 +1,59 @@
+import AiGenerated from "./components/tools/AiGenerated";
+import Beautify from "./components/tools/Beautify";
+import CreateNew from "./components/tools/CreateNew";
+import Elements from "./components/tools/Elements";
+import Filter from "./components/tools/Filter";
+import Stock from "./components/tools/Stock";
+import Tools from "./components/tools/Tools";
+import Upload from "./components/tools/Upload";
+
 export const tools = [
     {
         id: 0,
         name: 'Create New',
         icon: 'plus-circle',
-        link: 'beautify'
+        slug: 'create-new'
     },
     {
         id: 1,
         name: 'ai Beautify',
         icon: 'image',
-        link: 'beautify',
-        ai: true
+        slug: 'ai-beautify'
     },
     {
         id: 2,
         name: 'Tools',
         icon: 'crop',
-        link: 'crop'
+        slug: 'tools'
     },
     {
         id: 3,
         name: 'Elements',
         icon: 'square',
-        link: 'elements'
+        slug: 'elements'
     },
     {
         id: 4,
         name: 'Filter',
         icon: 'image',
-        link: 'filter'
+        slug: 'filter'
     },
     {
         id: 5,
         name: 'Upload',
         icon: 'upload-cloud',
-        link: 'adjust'
+        slug: 'upload'
     },
     {
         id: 6,
         name: 'Stock',
         icon: 'image',
-        link: 'stock'
+        slug: 'stock'
     },
     {
         id: 7,
         name: 'AI generated',
         icon: 'image',
-        link: 'ai-stock',
-        ai: true
+        slug: 'ai-generated'
     },
 ]
