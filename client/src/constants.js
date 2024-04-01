@@ -34,24 +34,30 @@ export const tools = [
     },
     {
         id: 4,
+        name: 'Draw',
+        icon: 'pen-tool',
+        slug: 'draw'
+    },
+    {
+        id: 5,
         name: 'Filter',
         icon: 'image',
         slug: 'filter'
     },
     {
-        id: 5,
+        id: 6,
         name: 'Upload',
         icon: 'upload-cloud',
         slug: 'upload'
     },
     {
-        id: 6,
+        id: 7,
         name: 'Stock',
         icon: 'image',
         slug: 'stock'
     },
     {
-        id: 7,
+        id: 8,
         name: 'AI Stock',
         icon: 'image',
         slug: 'ai-stock'

@@ -9,6 +9,7 @@ import Upload from './tools/Upload';
 import Stock from './tools/Stock';
 import AiGenerated from './tools/AiGenerated';
 import FeatherIcon from 'feather-icons-react';
+import Draw from './tools/Draw';
 
 const EditorToolExpanded = ({toolOpen, selectedTool, setToolOpen}) => {
 
@@ -26,6 +27,9 @@ const EditorToolExpanded = ({toolOpen, selectedTool, setToolOpen}) => {
     case 'elements' :
       result = <Elements/>
       break;
+      case 'draw' :
+        result = <Draw/>
+        break;
     case 'filter' :
       result = <Filter/>
       break;

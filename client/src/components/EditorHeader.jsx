@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import Export from './Export';
 
 const EditorHeader = () => {
   return (
@@ -16,9 +17,7 @@ const EditorHeader = () => {
                     </li>
                     <li>
                         <NavLink to="">
-                            <button className='text-white bg-gradient-to-r from-pink-600 to-orange-600 px-4 py-1 rounded'>
-                                Export
-                            </button>
+                            <Export/>
                         </NavLink>
                     </li>
                 </ul>

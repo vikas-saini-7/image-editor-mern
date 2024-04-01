@@ -10,7 +10,8 @@ const imageSlice = createSlice({
     initialState,
     reducers: {
         uploadImage: (state, action) => {
-            state.imageUrl = action.payload;
+            state.imageUrl = action.payload.url;
+            state.imageName = action.payload.name;
         }
     },
 })

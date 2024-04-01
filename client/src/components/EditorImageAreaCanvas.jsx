@@ -5,9 +5,13 @@ const EditorImageAreaCanvas = () => {
   const imageUrl = useSelector((state) => state.image.imageUrl)
 
   return (
-    <div className='bg-gray-200 w-full h-canvas overflow-auto flex items-center justify-center'>
-        {imageUrl && <img src={imageUrl} alt="" />}
-        {!imageUrl && 'Please press Create New to start Editing'}
+    <div className='canvas-container'>
+      <div className='canvas bg-gray-200'>
+          <div className='canvas-image-container h-canvas overflow-auto flex items-center justify-center'>
+            {imageUrl && <img className='canvas-image' src={imageUrl} alt="" />}
+            {!imageUrl && 'Press Create New to start Editing'}
+          </div>
+      </div>
     </div>
   )
 }
