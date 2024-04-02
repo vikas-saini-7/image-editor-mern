@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import {getAllIcons} from './actions/iconsActions'
 
 const initialState = {
-    icons: [],
+    allIcons: [],
     searchedIcons: [],
     loading: false,
     error:null
@@ -19,7 +19,7 @@ const iconSlice = createSlice({
         })
         builder.addCase(getAllIcons.fulfilled, (state, action) => {
             state.loading = false;
-            state.icons = action.payload;
+            state.allIcons = action.payload;
         })
         builder.addCase(getAllIcons.rejected, (state, action) => {
             state.loading = false;
@@ -28,6 +28,5 @@ const iconSlice = createSlice({
     }
 })
 
-export const {setIcons} = iconSlice.actions;
 
 export default iconSlice.reducer;

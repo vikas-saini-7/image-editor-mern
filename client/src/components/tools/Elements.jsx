@@ -1,14 +1,12 @@
-import React, { useEffect } from 'react'
-import { getAllIcons } from '../../store/actions/iconsActions'
-import { useDispatch } from 'react-redux'
+import React from 'react'
+import Icons from './Elements/Icons';
 
 const Elements = () => {
-  const dispatch = useDispatch();
-  useEffect(()=>{
-    dispatch(getAllIcons())
-  }, [])
   return (
-    <div>Elements</div>
+    <div>
+      <h1>Elements</h1>
+      <Icons/>
+    </div>
   )
 }
 
