@@ -1,9 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
-import {getAllIcons} from './actions/iconsActions'
 import { getAllStockImages } from "./actions/stockImagesActions";
 
 const initialState = {
-    stockAllImages: [{name:'image-1'}],
+    stockAllImages: [],
     searchedImages: [],
     loading: false,
     error:null
