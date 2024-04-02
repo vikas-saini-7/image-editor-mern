@@ -32,18 +32,18 @@ export const tools = [
         icon: 'square',
         slug: 'elements'
     },
-    {
-        id: 4,
-        name: 'Draw',
-        icon: 'pen-tool',
-        slug: 'draw'
-    },
-    {
-        id: 5,
-        name: 'Filter',
-        icon: 'image',
-        slug: 'filter'
-    },
+    // {
+    //     id: 4,
+    //     name: 'Draw',
+    //     icon: 'pen-tool',
+    //     slug: 'draw'
+    // },
+    // {
+    //     id: 5,
+    //     name: 'Filter',
+    //     icon: 'image',
+    //     slug: 'filter'
+    // },
     {
         id: 6,
         name: 'Upload',
