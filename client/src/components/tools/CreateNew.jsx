@@ -29,7 +29,7 @@ const CreateNew = () => {
   }
 
   return (
-    <div>
+    <div className='px-4'>
       <div className='mb-2'>
         <input
           type="file"

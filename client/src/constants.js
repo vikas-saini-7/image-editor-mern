@@ -3,7 +3,7 @@ import Beautify from "./components/tools/Beautify";
 import CreateNew from "./components/tools/CreateNew";
 import Elements from "./components/tools/Elements";
 import Filter from "./components/tools/Filter";
-import Stock from "./components/tools/Stock";
+import Stock from "./components/tools/stock/Stock";
 import Tools from "./components/tools/Tools";
 import Upload from "./components/tools/Upload";
 

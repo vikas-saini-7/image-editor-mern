@@ -16,7 +16,13 @@ input[type="range"]::-webkit-slider-thumb {
     height: calc(100vh - 72px - 120px);
   }
   .h-expanded{
-    height: calc(100vh - 72px - 120px);
+    height: calc(100vh - 72px);
+  }
+  .h-stock-images{
+    height: calc(100vh - 72px - 80px);
+  }
+  .h-icons{
+    height: calc(100vh - 72px - 80px);
   }
 
   .canvas-container {

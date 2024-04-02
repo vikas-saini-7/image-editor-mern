@@ -6,7 +6,7 @@ import Tools from './tools/Tools';
 import Elements from './tools/Elements';
 import Filter from './tools/Filter';
 import Upload from './tools/Upload';
-import Stock from './tools/Stock';
+import Stock from './tools/stock/Stock';
 import AiGenerated from './tools/AiGenerated';
 import FeatherIcon from 'feather-icons-react';
 import Draw from './tools/Draw';
@@ -50,15 +50,15 @@ const EditorToolExpanded = ({toolOpen, selectedTool, setToolOpen}) => {
   }
 
   return (
-    <div className={`${toolOpen ? 'w-fit-content border-r px-4':'w-0'} pt-4 relative`}>
-        <div className='w-[400px]'>
+    <div className={`${toolOpen ? 'w-fit border-r':'w-0'} pt-4 relative h-expanded`}>
+        <div className='flex flex-col w-[400px] h-[800px]'>
         {toolOpen && result}
         </div>
-        <div className={`${!toolOpen ? 'hidden' : 'flex'} absolute -right-[12px] h-full items-center h-expanded`}>
+        {/* <div className={`${!toolOpen ? 'hidden' : 'flex'} absolute top-0 -right-[12px] items-center`}>
           <div onClick={handleToggle} className='w-[12px] h-[120px] bg-gray-700 flex items-center justify-center cursor-pointer'>
             <FeatherIcon className='text-white' icon='chevron-left'/>
           </div>
-        </div>
+        </div> */}
     </div>
   )
 }
