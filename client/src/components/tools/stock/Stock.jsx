@@ -15,7 +15,7 @@ const Stock = () => {
         <input className='bg-gray-100 py-2 px-4 rounded-lg focus:outline-none border border-transparent focus:border-gray-200' type="text" placeholder='Search Image' />
       </div>
       <div className='overflow-auto h-stock-images grid grid-cols-1 gap-2 pl-4 pr-1'>
-        {stockAllImages.map((image) => (
+        {stockAllImages?.map((image) => (
           <div >
             <img className='rounded-lg border' src={image?.urls?.small} alt="" />
           </div>

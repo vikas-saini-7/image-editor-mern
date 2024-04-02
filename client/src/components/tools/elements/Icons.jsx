@@ -12,10 +12,10 @@ const Icons = () => {
   return (
     <div>
         {/* <h1 className='px-4'>Icons</h1> */}
-        <div className='grid grid-cols-4 gap-2 h-icons overflow-auto pl-4 pr-1'>
+        <div className='grid grid-cols-3 gap-2 h-icons overflow-auto pl-4 pr-1'>
             {icons?.map((icon) => (
-                <div className='flex items-center justify-center border rounded py-4'>
-                    <img src={icon?.download_url} alt="no" />
+                <div className='flex items-center justify-center border rounded py-6'>
+                    <img className='w-[30%]' src={icon?.download_url} alt="no" />
                 </div>
             ))}
         </div>
