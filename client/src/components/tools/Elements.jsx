@@ -5,7 +5,7 @@ const Elements = () => {
   return (
     <div>
       <div>
-        <h1 className='px-4 h-[50px] flex items-cente'>Elements</h1>
+        <h1 className='px-4 h-[50px] flex'>Elements</h1>
       </div>
       <Icons/>
     </div>
