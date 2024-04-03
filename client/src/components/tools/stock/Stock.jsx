@@ -17,7 +17,7 @@ const Stock = () => {
       <div className='overflow-auto h-stock-images grid grid-cols-1 gap-2 pl-4 pr-1'>
         {stockAllImages?.map((image) => (
           <div >
-            <img className='rounded-lg border' src={image?.urls?.small} alt="" />
+            <img className='rounded-lg border' src={image?.urls?.small} alt={image?.urls?.small} />
           </div>
         ))}
       </div>
